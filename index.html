@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Workout Tracker</h1>
+    </header>
+    <main>
+        <section id="routine">
+            <h2>Workout Routine</h2>
+            <div class="day">
+                <h3>Monday: Full Body Strength</h3>
+                <ul>
+                    <li>Squats: 3 sets of 12 reps</li>
+                    <li>Push-Ups: 3 sets of 10 reps</li>
+                    <li>Bent-Over Rows: 3 sets of 12 reps</li>
+                    <li>Plank: 3 sets of 30 seconds</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Tuesday: Cardio + Core</h3>
+                <ul>
+                    <li>30 minutes of running or cycling</li>
+                    <li>Crunches: 3 sets of 15 reps</li>
+                    <li>Bicycle Crunches: 3 sets of 15 reps per side</li>
+                    <li>Russian Twists: 3 sets of 20 reps</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Wednesday: Upper Body Strength</h3>
+                <ul>
+                    <li>Bench Press: 3 sets of 10 reps</li>
+                    <li>Dumbbell Shoulder Press: 3 sets of 12 reps</li>
+                    <li>Bicep Curls: 3 sets of 15 reps</li>
+                    <li>Tricep Dips: 3 sets of 12 reps</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Thursday: Cardio + Flexibility</h3>
+                <ul>
+                    <li>30 minutes of swimming or brisk walking</li>
+                    <li>Stretching routine: 10 minutes focusing on all major muscle groups</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Friday: Lower Body Strength</h3>
+                <ul>
+                    <li>Deadlifts: 3 sets of 10 reps</li>
+                    <li>Lunges: 3 sets of 12 reps per leg</li>
+                    <li>Calf Raises: 3 sets of 15 reps</li>
+                    <li>Leg Press: 3 sets of 12 reps</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Saturday: Active Recovery</h3>
+                <ul>
+                    <li>30 minutes of light cardio (walking, cycling)</li>
+                    <li>Gentle stretching or yoga for 20 minutes</li>
+                </ul>
+            </div>
+            <div class="day">
+                <h3>Sunday: Rest</h3>
+                <ul>
+                    <li>Complete rest or light activity (leisure walk)</li>
+                </ul>
+            </div>
+        </section>
+        <section id="progress">
+            <h2>Track Your Progress</h2>
+            <form id="progress-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="4" required></textarea>
+                <button type="submit">Add Progress</button>
+            </form>
+            <div id="progress-log">
+                <h3>Progress Log</h3>
+                <ul id="log"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
